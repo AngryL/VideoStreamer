@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Streaming Service</title>
+</head>
+
+<body>
+    <ul>
+        <% videoFileNames.forEach(fileName => {%>
+            <li>
+                <a href=<%= "./videos?video=" + fileName %>><%= fileName %></a>
+
+            </li>
+
+            <% }) %>
+    </ul>
+</body>
+
+</html>
