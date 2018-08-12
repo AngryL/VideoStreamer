@@ -6,8 +6,6 @@ const readDirectory = util.promisify(fs.readdir);
 
 let directoryPath = path.join(__dirname, "../", "videos");
 
-let videoFileNames = readDirectory(directoryPath);
-
 function getVideoFileNames() {
   let videoFileNames = readDirectory(directoryPath);
   return videoFileNames

@@ -8,8 +8,9 @@
 <body>
     <ul>
         <% videoFileNames.forEach(fileName => {%>
+            <% console.log("Video File name: ", fileName) %>
             <li>
-                <a href=<%= "./videos?video=" + fileName %>><%= fileName %></a>
+                <a href="<%= "./videos?video=" + fileName %>"><%= fileName %></a>
 
             </li>
 

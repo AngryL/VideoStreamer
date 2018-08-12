@@ -1,7 +1,7 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-let getVideoFileNames = require("../controllers/videoStreamer.js")
+const getVideoFileNames = require("../controllers/videoStreamer.js")
   .videoFileNames;
 
 // fileNames.array.forEach(fileName => {
